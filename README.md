@@ -12,7 +12,7 @@
 * title:'左上角列表标题'
 * height:'列表组件高度'
 * scrollTempo:'列表滚动速度'
-* path:' ‘更多’ 标签传入的路径'
+* path:' ‘更多’ 标签跳转的地址'
 * props.children:'自定义渲染函数'
 使用示例
 <Scroll list={yourlist} title="最新职位" height="250px" scrollTempo="30" path=''>
