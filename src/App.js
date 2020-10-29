@@ -4,7 +4,7 @@ import {
   HashRouter as Router,
   Link
 } from 'react-router-dom'
-import JobScroll from './jobScroll'
+import Scroll from './Scroll'
 
 //以下list列表数据是本要通过请求返回的JSON数据的解析结果
 var list = [{
