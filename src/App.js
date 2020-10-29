@@ -123,7 +123,7 @@ function App() {
         </div>
       </main>
       <footer>
-        <Scroll list={list} title="最新职位" height="250px" path="" scrollTempo="30">
+        <Scroll list={list} title="最新职位" height="250px" scrollTempo="30">
           {item => {
             return <div>
                 <Link href="">{item.position}</Link>
