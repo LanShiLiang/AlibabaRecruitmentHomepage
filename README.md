@@ -9,9 +9,13 @@
 //Scroll 组件传参指引
 
 * list:'需要渲染的子列表'
+
 * title:'左上角列表标题'
+
 * height:'列表组件高度'
+
 * scrollTempo:'列表滚动速度'
+
 * props.children:'自定义渲染函数'
 ~~~
 
