@@ -14,7 +14,7 @@
 * scrollTempo:'列表滚动速度'
 * path:' ‘更多’ 标签传入的路径'
 * props.children:'自定义渲染函数'
-
+使用示例
 <Scroll list={yourlist} title="最新职位" height="250px" scrollTempo="30" path=''>
          {
     	//props.children
