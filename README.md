@@ -16,6 +16,8 @@
 
 * scrollTempo:'列表滚动速度'
 
+* path:' ‘更多’ 标签传入的路径'
+
 * props.children:'自定义渲染函数'
 ~~~
 

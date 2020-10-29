@@ -156,7 +156,7 @@ footer>:last-child{
   flex-direction:column;
   justify-content:space-between;
 }
-footer>:last-child>div{
+footer>:last-child>a{
   margin-bottom: 35px;
   padding: 40px;
   box-shadow: 0px 0px 10px rgb(240	240	240);

@@ -123,7 +123,7 @@ function App() {
         </div>
       </main>
       <footer>
-        <Scroll list={list} title="最新职位" height="250px" scrollTempo="30">
+        <Scroll list={list} title="最新职位" height="250px" scrollTempo="30" path=''>
           {item => {
             return <div>
                 <Link href="">{item.position}</Link>
@@ -133,12 +133,17 @@ function App() {
           }}
         </Scroll>
         <div>
+        <Link>
           <div>
             <img src="https://img.alicdn.com/tfs/TB1SbxarYj1gK0jSZFOXXc7GpXa-2546-848.png" alt="阿里云" />
           </div>
+        </Link>
+        <Link>
           <div>
             <img src="https://img.alicdn.com/tfs/TB18tFCCH2pK1RjSZFsXXaNlXXa-240-34.svg" alt="企业智能"/>
           </div>
+        </Link>
+
         </div>
       </footer>
     </Router>

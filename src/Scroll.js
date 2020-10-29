@@ -1,6 +1,5 @@
 import React,{useRef, useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import { List } from "react-virtualized";
 
 export default function Jobs(props) {
   let render = props.children
@@ -41,7 +40,7 @@ export default function Jobs(props) {
             fontWeight:'bold',
             color: 'rgb(121,136,155)'
             }}>
-        <div>{props.user}</div>
+        <div>{props.title}</div>
         <Link to={props.path}>更多</Link>
       </div>
       <div ref={scrollContainer} style={{ height:props.height, overflow: 'hidden' }} onMouseOver={handleMouseOver} onMouseLeave={handleMouseOut}>
@@ -60,7 +59,6 @@ export default function Jobs(props) {
               </li>
             )
           }
-          <List></List>
         </ul>
       </div>
     </div>
