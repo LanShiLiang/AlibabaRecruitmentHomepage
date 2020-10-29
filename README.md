@@ -3,7 +3,7 @@
 阿里巴巴招聘首页官方地址 https://job.alibaba.com/zhaopin/index.html
 无限滚动组件渲染效果：gitlab地址 https://lanshiliang.github.io/AlibabaRecruitmentHomepage
 
-**可复用滚动列表组件的源码地址：  ./src/Scroll.js**  
+**可复用滚动列表组件的源码地址：  **[./src/Scroll.js](https://github.com/LanShiLiang/AlibabaRecruitmentHomepage/blob/master/src/Scroll.js)**  
 
 #### Scroll 组件传参指引
 
