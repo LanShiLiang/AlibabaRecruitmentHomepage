@@ -138,7 +138,7 @@ footer ul{
   font-size: small;
 
 }
-footer ul li{
+footer ul div{
   position: relative;
   list-style: none;
   display: flex;
