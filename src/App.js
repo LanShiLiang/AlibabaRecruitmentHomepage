@@ -72,19 +72,20 @@ function App() {
         <div className='header-width'>
         <div>
           <img src="https://img.alicdn.com/tfs/TB1Zv8_lxSYBuNjSspjXXX73VXa-390-63.png" alt="logo"/>
-          <span>  |  社招官网</span>
+          <span>社招官网</span>
         </div>
         <div id="header-links">
-          <Link>首 页</Link>
-          <Link>社会招聘</Link>
-          <Link>校园招聘</Link>
-          <Link>了解阿里</Link>
-          <Link>个人中心</Link>
+          <Link href="">首 页</Link>
+          <Link href="">社会招聘</Link>
+          <Link href="">校园招聘</Link>
+          <Link href="">了解阿里</Link>
+          <Link href="">个人中心</Link>
         </div>
         <div id="header-links-right">
           <span>欢迎来到阿里巴巴集团招聘！</span>
-          <Link>登录 |</Link>
-          <Link> 注册</Link>
+          <Link>登录</Link>
+          {" | "}
+          <Link href="">注册</Link>
         </div>
         </div>
       </header>
@@ -102,27 +103,35 @@ function App() {
           </div>
         </div>
         <div>
-          <form>
+          <form action="">
             <div id="cover-form"></div>
-            <input type="text" placeholder="请输入职位关键词"/>
+            <input type="text" name="" placeholder="请输入职位关键词"/>
             <button>搜索</button>
           </form>
           <div>
             <span>热门搜索：</span>
-            <Link>IOS</Link>
-            <Link>数据</Link>
-            <Link>安全</Link>
-            <Link>搜索</Link>
-            <Link>算法</Link>
-            <Link>运营</Link>
-            <Link>视觉</Link>
-            <Link>交互</Link>
-            <Link>前端</Link>
+            <Link href="">IOS</Link>
+            <Link href="">数据</Link>
+            <Link href="">安全</Link>
+            <Link href="">搜索</Link>
+            <Link href="">算法</Link>
+            <Link href="">运营</Link>
+            <Link href="">视觉</Link>
+            <Link href="">交互</Link>
+            <Link href="">前端</Link>
           </div>
         </div>
       </main>
       <footer>
-        <JobScroll List={list} user="最新职位" height="250px" path="" speed="30"></JobScroll>
+        <Scroll list={list} title="最新职位" height="250px" path="" scrollTempo="30">
+          {item => {
+            return <div>
+                <Link href="">{item.position}</Link>
+                <div style={{position: 'absolute', left: '55%'}}>{item.city}</div>
+                <div>{item.time}</div>
+              </div>
+          }}
+        </Scroll>
         <div>
           <div>
             <img src="https://img.alicdn.com/tfs/TB1SbxarYj1gK0jSZFOXXc7GpXa-2546-848.png" alt="阿里云" />
