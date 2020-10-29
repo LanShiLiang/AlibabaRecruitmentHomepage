@@ -9,16 +9,24 @@
 
 ~~~js
 * list:'需要渲染的子列表'
-
 * title:'左上角列表标题'
-
 * height:'列表组件高度'
-
 * scrollTempo:'列表滚动速度'
-
 * path:' ‘更多’ 标签传入的路径'
-
 * props.children:'自定义渲染函数'
+
+<Scroll list={yourlist} title="最新职位" height="250px" scrollTempo="30" path=''>
+         {
+    	//props.children
+		item => {
+            return <div>
+                <Link href="">{item.position}</Link>
+                <div style={{position: 'absolute', left: '55%'}}>{item.city}</div>
+                <div>{item.time}</div>
+              </div>
+          }
+	}
+</Scroll>
 ~~~
 
 本组件产生需求时未明确数据量级， 采用DOM操作scrollTop无缝衔接轮流播放实现效果
