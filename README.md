@@ -1,6 +1,7 @@
 # 仿阿里巴巴招聘首页
 
-仿写阿里巴巴招聘首页https://job.alibaba.com/zhaopin/index.htm
+阿里巴巴招聘首页官方地址 https://job.alibaba.com/zhaopin/index.html
+本组件渲染效果：gitlab地址 https://lanshiliang.github.io/AlibabaRecruitmentHomepage
 
 **可复用滚动列表组件代码地址：  ./src/Scroll.js**  
 
@@ -14,9 +15,7 @@
 * props.children:'自定义渲染函数'
 ~~~
 
+本组件需求未明确数据量级， 采用DOM操作scrollTop无缝衔接轮流播放实现效果，未使用虚拟化列表。
 
 
-本组件需求未明确数据量级， 未使用虚拟化列表。
-
-gitlab地址 https://lanshiliang.github.io/AlibabaRecruitmentHomepage
 
