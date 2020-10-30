@@ -6,8 +6,8 @@ import {
 } from 'react-router-dom'
 import Scroll from './Scroll'
 
-//以下list列表数据是本要通过请求返回的JSON数据的解析结果
-var list = [{
+//list列表数据是本要通过请求返回的JSON数据的解析结果
+const list = [{
   id:1,
   position: '1蚂蚁集团-城市经理（商业线）-华东区-支付宝',
   city: '杭州',
@@ -63,19 +63,52 @@ var list = [{
   city: '杭州，北京',
   time: '27分钟前',
 }]
-
-//以下利用router做前端路由跳转，因为没有后端配合，这里只做示意
+//popularSearches热门搜索数据本要通过请求返回的JSON数据的解析结果
+const popularSearches = [{
+    url: '',
+    job: 'JAVA',
+    },{
+    url: '',
+    job: 'IOS',
+    },{
+    url: '',
+    job: '数据',
+    },{
+    url: '',
+    job: '安全',
+    },{
+    url: '',
+    job: '搜索',
+    },{
+    url: '',
+    job: '算法',
+    },{
+    url: '',
+    job: '运营',
+    },{
+    url: '',
+    job: '视觉',
+    },{
+    url: '',
+    job: '交互',
+    },{
+    url: '',
+    job: '前端',
+    },
+]
+//以下利用router做前端路由跳转，因为没有后端配合，这里仅做参考
 function App() {
   return (
     <Router>
       <header>
         <div className='header-width'>
-        <div>
+        <div style={{display:'flex'}}>
           <img src="https://img.alicdn.com/tfs/TB1Zv8_lxSYBuNjSspjXXX73VXa-390-63.png" alt="logo"/>
-          <span>社招官网</span>
+          <i style={{color:'white',fontStyle:'normal',fontSize:'20px',verticalAlign:'center',margin: '0 10px',opacity: '0.8'}}>|</i>
+          <span style={{alignItems:'center'}}>社招官网</span>
         </div>
         <div id="header-links">
-          <Link href="">首 页</Link>
+          <Link href="">首&nbsp;&nbsp;页</Link>
           <Link href="">社会招聘</Link>
           <Link href="">校园招聘</Link>
           <Link href="">了解阿里</Link>
@@ -102,7 +135,7 @@ function App() {
             此时此刻，非我莫属!
           </div>
         </div>
-        <div>
+        <div style={{width:'490px'}}>
           <form action="">
             <div id="cover-form"></div>
             <input type="text" name="" placeholder="请输入职位关键词"/>
@@ -110,15 +143,13 @@ function App() {
           </form>
           <div>
             <span>热门搜索：</span>
-            <Link href="">IOS</Link>
-            <Link href="">数据</Link>
-            <Link href="">安全</Link>
-            <Link href="">搜索</Link>
-            <Link href="">算法</Link>
-            <Link href="">运营</Link>
-            <Link href="">视觉</Link>
-            <Link href="">交互</Link>
-            <Link href="">前端</Link>
+            {
+              popularSearches.map(item =>
+                <Link href={item.url}>
+                 {item.job}
+              </Link>
+              )
+            }
           </div>
         </div>
       </main>
