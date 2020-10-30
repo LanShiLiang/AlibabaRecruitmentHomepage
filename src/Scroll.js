@@ -6,7 +6,6 @@ export default function Jobs(props) {
   let ulEl = useRef()
   let scrollContainer = useRef()
   let timeId
-  console.log('render'+render)
   useEffect(() => {
     scroll(props.scrollTempo)
   }, [])
