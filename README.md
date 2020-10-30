@@ -1,9 +1,8 @@
-# 仿阿里巴巴招聘首页
+# 无限滚动列表
 
-阿里巴巴招聘首页官方地址 https://job.alibaba.com/zhaopin/index.html
-无限滚动组件渲染效果：gitlab地址 https://lanshiliang.github.io/AlibabaRecruitmentHomepage
+本项目渲染效果：gitlab地址 https://lanshiliang.github.io/AlibabaRecruitmentHomepage
 
-**实现的可复用滚动列表组件的源码地址：  **[./src/Scroll.js](https://github.com/LanShiLiang/AlibabaRecruitmentHomepage/blob/master/src/Scroll.js)**  
+本项目实现的可复用滚动列表组件源码地址：  **[./src/Scroll.js](https://github.com/LanShiLiang/AlibabaRecruitmentHomepage/blob/master/src/Scroll.js)**  
 
 #### Scroll 组件传参指引
 
@@ -28,8 +27,6 @@
 	}
 </Scroll>
 ~~~
-
-本组件产生需求时未明确数据量级， 采用DOM操作scrollTop衔接轮流播放实现无限滚动效果
 
 
 
