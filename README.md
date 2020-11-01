@@ -10,11 +10,11 @@
 * list:Array<object>'需要渲染的子列表'
 list格式示例：[{id:1,position: '1蚂蚁集团-城市经理',city: '杭州',time:'27分钟前'}]
 
-* title:string	       '左上角列表标题'
-* height 				       '内框部分的高度'
-* scrollTempo:number 	 '滚动速度 越小越快'
-* path:url				     '‘更多’ 标签跳转的地址'
-* props.children	 	   '自定义渲染函数'
+* title:string        '左上角列表标题'
+* height              '内框部分的高度'
+* scrollTempo:number  '滚动速度 越小越快'
+* path:url            '‘更多’ 标签跳转的地址'
+* props.children      '自定义渲染函数'
 使用示例
 <Scroll list={yourlist} title="最新职位" height="250px" scrollTempo="30" path=''>
          {item => {
