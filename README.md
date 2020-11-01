@@ -17,9 +17,7 @@ list格式示例：[{id:1,position: '1蚂蚁集团-城市经理',city: '杭州',
 * props.children	 	   '自定义渲染函数'
 使用示例
 <Scroll list={yourlist} title="最新职位" height="250px" scrollTempo="30" path=''>
-         {
-    	//props.children
-		item => {
+         {item => {
             return <div>
                 <Link href="">{item.position}</Link>
                 <div style={{position: 'absolute', left: '55%'}}>{item.city}</div>
