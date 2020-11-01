@@ -3,18 +3,17 @@ import { Link } from 'react-router-dom'
 
 export default function Jobs(props) {
   let render = props.children
-  let ulEl = useRef()
   let scrollContainer = useRef()
   let timeId
   useEffect(() => {
     scroll(props.scrollTempo)
+    console.log(scrollContainer.current.clientHeight)
   }, [])
-
   function scroll(scrollTempo) {
     timeId= setInterval(() => {
       scrollContainer.current.scrollTop++
-      if (scrollContainer.current.scrollTop >= ulEl.current.scrollHeight/2) {
-        scrollContainer.current.scrollTop= 0
+      if (scrollContainer.current.scrollHeight / 2 - scrollContainer.current.scrollTop <= 0) {
+        scrollContainer.current.scrollTop = 0
       }
     }, scrollTempo)
   }
@@ -43,7 +42,7 @@ export default function Jobs(props) {
         <Link to={props.path}>更多</Link>
       </div>
       <div ref={scrollContainer} style={{ height:props.height, overflow: 'hidden' }} onMouseOver={handleMouseOver} onMouseLeave={handleMouseOut}>
-        <ul ref={ulEl}>
+        <ul>
           {
             props.list.map(it =>
               <li key={it.id}>
