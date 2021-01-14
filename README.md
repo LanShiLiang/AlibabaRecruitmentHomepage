@@ -1,6 +1,6 @@
 # 无限滚动列表
 
-本项目渲染效果：gitlab地址 https://lanshiliang.github.io/AlibabaRecruitmentHomepage
+本项目渲染效果：gitlab地址 https://lanshiliang.github.io/AlibabaRecruitmentHomepage.github.io/
 
 本项目实现的可复用滚动列表组件源码地址：**[./src/Scroll.js(点击跳转)](https://github.com/LanShiLiang/AlibabaRecruitmentHomepage/blob/master/src/Scroll.js)**
 
